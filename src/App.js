@@ -8,7 +8,7 @@ import Store from "./components/Store";
 import About from "./components/About";
 import data from "./Data";
 import Contact from "./components/Contact";
-import Card from "./components/Card";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -21,8 +21,18 @@ function App() {
         ></Route>
         <Route path="/Store" element={<Store storedata={data}></Store>}></Route>
         <Route path="/About" element={<About></About>}></Route>
-        <Route path="/Contact" element={<h1><Contact></Contact></h1>}></Route>
-        {/* <Route path="/Card" element={<Card></Card>}></Route> */}
+        <Route
+          path="/Contact"
+          element={
+            <h1>
+              <Contact></Contact>
+            </h1>
+          }
+        ></Route>
+        <Route
+          path="/Store/:Productid"
+          element={<ProductDetails></ProductDetails>}
+        ></Route>
       </Routes>
       <Footer></Footer>
     </div>
