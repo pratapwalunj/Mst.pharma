@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.active {
+  color: chartreuse;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
