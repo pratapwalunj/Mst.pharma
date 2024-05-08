@@ -33,7 +33,7 @@ function Store(props) {
           return (
             <div key={val.id} className="bg-red-200 h-[300px] w-[240px] block gap-2 m-auto mt-3 mb-1 rounded-sm hover:shadow-2xl">
               {/* image  */}
-              <Link to={`/Store/:${val.id}`}>
+              <Link to={`/Store/${val.id}`}>
                 <div className="h-[250px]  w-[220px] border-2 m-auto">
                   <img
                     // onClick={()=>PdetalisHandler(val)}
